@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Upgrade to Spotify Premium at just a little one time fee. Don't pay excessive monthly fees for Spotify's Premium and enjoy the benefits of ad free music and downloadable content">
+  <meta name="author" content="Pringle">
+  <title>Spotify Premium</title>
+  <link rel="icon" href="/assets/img/brand/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/assets/libs/%40fortawesome/fontawesome-pro/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/purpose.css" id="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" />
+</head>
+
+<body class="bg-primary">
+  <header class="header header-transparent" id="header-main">
+    <!-- Main navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark" id="navbar-main">
+      <div class="container px-lg-0">
+        <!-- Navbar collapse trigger -->
+        <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
+          aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar nav -->
+        <div class="collapse navbar-collapse" id="navbar-main-collapse">
+          <ul class="navbar-nav align-items-lg-center">
+            <!-- Home - Overview  -->
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <!-- Info menu -->
+            <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Info</a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="dropdown dropdown-animate">
+                    <a href="/upgrade" class="list-group-item" role="button">
+                      <div class="media d-flex align-items-center">
+                        <!-- SVG icon -->
+                        <figure style="width: 50px;">
+                          <img alt="Image placeholder" src="/assets/img/icons/essential/detailed/Secure_Files.svg"
+                            class="svg-inject img-fluid" style="height: 50px;">
+                        </figure>
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Redeem</h6>
+                          <p class="mb-0">Authenticate your key and redeem your upgrade</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown dropdown-animate">
+                    <a href="/check" class="list-group-item" role="button">
+                      <div class="media d-flex align-items-center">
+                        <!-- SVG icon -->
+                        <figure style="width: 50px;">
+                          <img alt="Image placeholder" src="/assets/img/icons/essential/detailed/Task.svg"
+                            class="svg-inject img-fluid" style="height: 50px;">
+                        </figure>
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Check Key</h6>
+                          <p class="mb-0">Lost your upgrade details? Check it here.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown dropdown-animate">
+                    <a href="/buy" class="list-group-item" role="button">
+                      <div class="media d-flex align-items-center">
+                        <!-- SVG icon -->
+                        <figure style="width: 50px;">
+                          <img alt="Image placeholder" src="/assets/img/icons/essential/detailed/Cart_Add_2.svg"
+                            class="svg-inject img-fluid" style="height: 50px;">
+                        </figure>
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Shop</h6>
+                          <p class="mb-0">Buy an upgrade key.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown dropdown-animate">
+                    <a href="/faq" class="list-group-item" role="button">
+                      <div class="media d-flex align-items-center">
+                        <figure style="width: 50px;">
+                          <img alt="Image placeholder" src="/assets/img/icons/essential/detailed/Cog_Wheels.svg"
+                            class="svg-inject img-fluid" style="height: 50px;">
+                        </figure>
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">FAQ</h6>
+                          <p class="mb-0">Frequently asked questions</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/#pricing">Pricing</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#stock_modal">Stock</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item mr-0">
+              <a href="/buy" target="_blank" class="nav-link d-lg-none">Purchase now</a>
+              <a href="/buy" target="_blank" class="btn btn-sm btn-white btn-icon rounded-pill d-none d-lg-inline-flex"
+                data-toggle="tooltip" data-placement="left" title="Buy a key">
+                <span class="btn-inner--icon"><i class="far fa-shopping-cart"></i></span>
+                <span class="btn-inner--text">Purchase now</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="main-content">
+    <!-- Header (v5) -->
+    <section class="slice slice-xl pb-250 bg-primary" data-offset-top="#header-main">
+      <div class="bg-absolute-cover bg-size--contain d-flex align-items-center zindex-100">
+        <figure class="w-100">
+          <img alt="Image placeholder" src="/assets/img/svg/backgrounds/bg-1.svg" class="svg-inject">
+        </figure>
+      </div>
+      <div class="spotlight-holder d-flex align-items-center">
+        <div class="container position-relative zindex-100 py-7">
+          <div class="row row-grid justify-content-around align-items-center">
+            <div class="col-lg-6">
+              <div class="pt-lg text-center">
+                <h2 class="h1 text-white mb-3">Upgrade to <span class="text-info typed" id="type-example"
+                    data-type-this="no ads., unlimited skips., offline streaming., Spotify Premium."></span></h2>
+                <p class="lead text-white lh-180">Enter your <a href="/buy" class="text-dark">upgrade key</a> and
+                  country to enjoy the benefits of Spotify Premium at no extra cost.</p>
+                <div class="mt-5 px-4">
+                  <form class="mt-5">
+                    <div class="form-group mb-0">
+                      <div class="input-group input-group-merge rounded-pill bg-white">
+                        <select class="form-control form-control-flush" id="countryoptions"
+                          style=" border-top-right-radius: 50rem;border-bottom-right-radius: 50rem;"></select>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="form-group mb-0">
+                      <div class="input-group input-group-merge rounded-pill bg-white">
+                        <input type="password" class="form-control form-control-flush" name="upgradekey" id="upgradekey"
+                          placeholder="Upgrade key">
+                      </div>
+                    </div>
+                    <div class="mt-4">
+                      <a href="/buy" class="text-dark">Buy a key</a>
+                      <button style="margin-left: 10px;" type="button" id="submit"
+                        class="btn btn-sm btn-info btn-icon rounded-pill">
+                        <span class="btn-inner--text">Upgrade</span>
+                        <span class="btn-inner--icon"><i class="far fa-long-arrow-alt-right"></i></span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shape-container" data-shape-position="bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 220" preserveAspectRatio="none"
+          class="ie-shape-wave-3">
+          <path
+            d="M918.34,99.41C388.23,343.6,47.11,117.12,0,87.54V220H1600V87.54C1378.72-76.71,1077.32,27.41,918.34,99.41Z">
+          </path>
+        </svg>
+      </div>
+    </section>
+    <!-- Features (v14) -->
+    <section class="slice slice-lg">
+      <div class="container">
+        <div class="mb-5 text-center">
+          <span class="badge badge-soft-success badge-pill badge-lg">
+            Our process
+          </span>
+          <h3 class=" mt-4">Upgrade with confidence</h3>
+          <div class="fluid-paragraph mt-3">
+            <p class="lead lh-180">Getting Spotify Premium has never been easier. We have all the right tools in order
+              to make your upgrade process process a breeze.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card hover-translate-y-n10 hover-shadow-lg p-2">
+              <div class="card-body">
+                <div class="">
+                  <div class="pb-5">
+                    <div class="icon bg-primary text-white rounded-circle icon-lg icon-shape shadow">
+                      <i class="fal fa-key-skeleton"></i>
+                    </div>
+                  </div>
+                  <h5 class="font-weight-bold">Buy a key</h5>
+                  <p class="mt-2 mb-0">Buy a key from <a href="/buy">our shop</a> and use it to get access to our simple
+                    upgrade process. You can even buy in bulk and resell for profits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card hover-translate-y-n10 hover-shadow-lg p-2">
+              <div class="card-body">
+                <div class="">
+                  <div class="pb-5">
+                    <div class="icon bg-primary text-white rounded-circle icon-lg icon-shape shadow">
+                      <i class="fab fa-wpforms"></i>
+                    </div>
+                  </div>
+                  <h5 class="font-weight-bold">Enter your details</h5>
+                  <p class="mt-2 mb-0">Just enter the key above and select your country to start the upgrade process.
+                    The entire process is very quick and usually takes less than a minute.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card hover-translate-y-n10 hover-shadow-lg p-2">
+              <div class="card-body">
+                <div class="">
+                  <div class="pb-5">
+                    <div class="icon bg-primary text-white rounded-circle icon-lg icon-shape shadow">
+                      <i class="far fa-tools"></i>
+                    </div>
+                  </div>
+                  <h5 class="font-weight-bold">Finalise</h5>
+                  <p class="mt-2 mb-0">Finish up your upgrade with the instructions it gives and enjoy your Spotify
+                    Premium features. You can always <a href="/contact">contact us</a> for more help.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer id="footer-main">
+    <div class="footer-dark bg-section-dark" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="row pt-md">
+          <p>Made with ❤️ by Pringle</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal modal-success fade" id="stock_modal" tabindex="-1" role="dialog" aria-labelledby="modal_success"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h6" id="modal_title_6">Check our stock</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="py-3 text-center">
+            <i class="far fa-users fa-4x"></i>
+            <h5 class="heading h4 mt-4">Upgrade Stock</h5>
+            <p id="stock"></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-white" data-dismiss="modal">OK, cool</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button style="display: none" id="response" data-toggle="modal" data-target="#modal-response"></button>
+  <div class="modal fade" id="modal-response" tabindex="-1" role="dialog" aria-labelledby="modal-change-username"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dark modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h6" id="modal_title_6">You've been upgraded!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="py-3 text-center">
+            <h5 class="font-weight-bold text-white">Address</h5>
+            <p class="mt-2 text-white mb-0" id="address">Loading...</p>
+            <hr class="divider divider-fade" />
+            <a href="#" id="inviteurl" target="_blank" class="btn btn-animated btn-success btn-animated-x">
+              <span class="btn-inner--visible">Upgrade</span>
+              <span class="btn-inner--hidden">
+                <i class="far fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/purpose.core.js"></script>
+  <script src="/assets/libs/typed.js/lib/typed.min.js"></script>
+  <script src="/assets/js/purpose.js"></script>
+  <script src="/assets/js/demo.js"></script>
+  <script src="/assets/js/spotify.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+</body>
+
+</html>

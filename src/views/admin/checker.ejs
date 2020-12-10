@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Admin Panel
+  </title>
+  <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+  <link href="/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <link href="/assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" />
+</head>
+
+<body class="">
+  <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+    <div class="container-fluid">
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main"
+        aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Brand -->
+      <a class="navbar-brand pt-0" href="/admin/">
+        <img src="/assets/img/brand/dark.png" class="navbar-brand-img" alt="...">
+      </a>
+      <!-- User -->
+      <ul class="nav align-items-center d-md-none">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="media align-items-center">
+              <span class="avatar avatar-sm rounded-circle">
+                <img alt="Image placeholder" src="/assets/img/brand/favicon.png">
+              </span>
+            </div>
+          </a>
+          <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+            <div class=" dropdown-header noti-title">
+              <h6 class="text-overflow m-0">Welcome!</h6>
+            </div>
+            <a href="/admin/" class="dropdown-item">
+              <i class="ni ni-tv-2"></i>
+              <span>Dashboard</span>
+            </a>
+            <a href="/admin/keys" class="dropdown-item">
+              <i class="ni ni-key-25"></i>
+              <span>Manage Keys</span>
+            </a>
+            <a href="/admin/accounts" class="dropdown-item">
+              <i class="fas fa-users"></i>
+              <span>Manage Accounts</span>
+            </a>
+            <a href="/admin/logging" class="dropdown-item">
+              <i class="fas fa-file-alt"></i>
+              <span>Logging</span>
+            </a>
+            <a href="/admin/checker" class="dropdown-item">
+              <i class="fas fa-clipboard-list"></i>
+              <span>Checker</span>
+            </a>
+            <a href="/admin/help" class="dropdown-item">
+              <i class="ni ni-support-16"></i>
+              <span>Support</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#!" class="dropdown-item">
+              <i class="ni ni-user-run"></i>
+              <span>Logout</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+        <!-- Collapse header -->
+        <div class="navbar-collapse-header d-md-none">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="/">
+                <img src="/assets/img/brand/dark.png">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sidenav-collapse-main"
+                aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation -->
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class=" nav-link " href=" /admin/"> <i class="ni ni-tv-2 text-primary"></i> Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/keys">
+              <i class="ni ni-key-25 text-blue"></i> Manage Keys
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/admin/accounts">
+              <i class="fas fa-users text-blue"></i> Manage Accounts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/logging">
+              <i class="fas fa-file-alt text-blue"></i> Logging
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" href="/admin/checker">
+              <i class="fas fa-clipboard-list text-blue"></i> Checker
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/admin/help">
+              <i class="ni ni-support-16 text-blue"></i> Support
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/admin/logout">
+              <i class="ni ni-user-run text-blue"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="/admin/">Dashboard</a>
+        <!-- User -->
+        <ul class="navbar-nav align-items-center d-none d-md-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="/assets/img/brand/favicon.png">
+                </span>
+                <div class="media-body ml-2 d-none d-lg-block">
+                  <span class="mb-0 text-sm  font-weight-bold">Admin</span>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+              <div class=" dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Welcome!</h6>
+              </div>
+              <a href="/admin/" class="dropdown-item">
+                <i class="ni ni-tv-2"></i>
+                <span>Dashboard</span>
+              </a>
+              <a href="/admin/keys" class="dropdown-item">
+                <i class="ni ni-key-25"></i>
+                <span>Manage Keys</span>
+              </a>
+              <a href="/admin/accounts" class="dropdown-item">
+                <i class="fas fa-users"></i>
+                <span>Manage Accounts</span>
+              </a>
+              <a href="/admin/logging" class="dropdown-item">
+                <i class="fas fa-file-alt"></i>
+                <span>Logging</span>
+              </a>
+              <a href="/admin/checker" class="dropdown-item">
+                <i class="fas fa-clipboard-list"></i>
+                <span>Checker</span>
+              </a>
+              <a href="/admin/help" class="dropdown-item">
+                <i class="ni ni-support-16"></i>
+                <span>Support</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="/admin/logout" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span>Logout</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row">
+            <div class="col-xl-4 col-lg-6">
+              <a class="card card-stats mb-4 mb-xl-0" href="/admin/keys">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Keys</h5>
+                      <span class="h2 font-weight-bold mb-0" id="totalkeys"></span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                        <i class="fas fa-chart-bar"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6">
+              <a class="card card-stats mb-4 mb-xl-0" href="/admin/accounts">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Countries</h5>
+                      <span class="h2 font-weight-bold mb-0" id="totalcountries"></span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                        <i class="fas fa-users"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-xl-4 col-lg-6">
+              <a class="card card-stats mb-4 mb-xl-0" href="/admin/accounts">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">Accounts</h5>
+                      <span class="h2 font-weight-bold mb-0" id="totalaccounts"></span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                        <i class="ni ni-lock-circle-open"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid mt--7">
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <h3 class="mb-0" style="display: inline;">Checker</h3>
+              <p>You have not bought this addon</p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <script src="/assets/js/plugins/jquery/dist/jquery.min.js"></script>
+  <script src="/assets/js/plugins/moment/moment.min.js"></script>
+  <script src="/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/plugins/chart.js/dist/Chart.min.js"></script>
+  <script src="/assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
+  <script src="/assets/js/argon-dashboard.js?v=1.1.0"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+  <script src="/assets/js/admin.js"></script>
+</body>
+
+</html>

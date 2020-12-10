@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Upgrade to Spotify Premium at just a little one time fee. Don't pay excessive monthly fees for Spotify's Premium and enjoy the benefits of ad free music and downloadable content">
+  <meta name="author" content="Pringle">
+  <title>Spotify Premium</title>
+  <link rel="icon" href="/assets/img/brand/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/assets/libs/%40fortawesome/fontawesome-pro/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/purpose.css" id="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css" />
+</head>
+
+<body>
+  <header class="header header-transparent" id="header-main">
+    <!-- Main navbar -->
+    <nav class="navbar fixed-top sticky navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark"
+      id="navbar-main" style="position: fixed;">
+      <div class="container px-lg-0">
+        <!-- Navbar collapse trigger -->
+        <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse"
+          aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar nav -->
+        <div class="collapse navbar-collapse" id="navbar-main-collapse">
+          <ul class="navbar-nav align-items-lg-center">
+            <!-- Home - Overview  -->
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <!-- Info menu -->
+            <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Info</a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="dropdown dropdown-animate">
+                    <a href="/upgrade" class="list-group-item" role="button" >
+                      <div class="media d-flex align-items-center">
+                        <!-- SVG icon -->
+                        <figure style="width: 50px;">
+                          <img alt="Image placeholder" src="/assets/img/icons/essential/detailed/Secure_Files.svg"
+                            class="svg-inject img-fluid" style="height: 50px;">
+                        </figure>
+                        <!-- Media body -->
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Redeem</h6>
+                          <p class="mb-0">Authenticate your key and redeem your upgrade</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown dropdown-animate">
+                    <a href="/check" class="list-group-item" role="button">
+                      <div class="media d-flex align-items-center">
+                        <figure style="width: 50px;">
+                          <img alt="Image placeholder" src="/assets/img/icons/essential/detailed/Task.svg"
+                            class="svg-inject img-fluid" style="height: 50px;">
+                        </figure>
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Check Key</h6>
+                          <p class="mb-0">Lost your upgrade details? Check it here.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown dropdown-animate">
+                    <a href="/buy" class="list-group-item" role="button">
+                      <div class="media d-flex align-items-center">
+                        <figure style="width: 50px;">
+                          <img alt="Image placeholder" src="/assets/img/icons/essential/detailed/Cart_Add_2.svg"
+                            class="svg-inject img-fluid" style="height: 50px;">
+                        </figure>
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">Shop</h6>
+                          <p class="mb-0">Buy an upgrade key.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown dropdown-animate">
+                    <a href="/faq" class="list-group-item" role="button">
+                      <div class="media d-flex align-items-center">
+                        <figure style="width: 50px;">
+                          <img alt="Image placeholder" src="/assets/img/icons/essential/detailed/Cog_Wheels.svg"
+                            class="svg-inject img-fluid" style="height: 50px;">
+                        </figure>
+                        <div class="media-body ml-3">
+                          <h6 class="mb-1">FAQ</h6>
+                          <p class="mb-0">Frequently asked questions</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/#pricing">Pricing</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#stock_modal">Stock</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+            <li class="nav-item mr-0">
+              <a href="/buy" target="_blank"
+                class="nav-link d-lg-none">Purchase now</a>
+              <a href="/buy" target="_blank"
+                class="btn btn-sm btn-white btn-icon rounded-pill d-none d-lg-inline-flex" data-toggle="tooltip"
+                data-placement="left" title="Buy a key">
+                <span class="btn-inner--icon"><i class="far fa-shopping-cart"></i></span>
+                <span class="btn-inner--text">Purchase now</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="main-content">
+    <!-- Header (v9) -->
+    <section class="slice slice-xl bg-gradient-dark" style="padding-bottom: 150px; padding-top: 0;">
+      <!-- SVG background -->
+      <div class="bg-absolute-cover bg-size--contain d-flex align-items-center">
+        <figure class="w-100">
+          <img alt="Image placeholder" src="/assets/img/svg/backgrounds/light-texture.svg" class="svg-inject">
+        </figure>
+      </div>
+      <div class="container py-5 position-relative zindex-100">
+        <div class="row row-grid justify-content-around align-items-center">
+          <div class="col-lg-5">
+            <div class="text-center text-lg-left">
+              <span class="badge badge-soft-primary badge-pill">Spotify</span>
+              <h1 class="text-white mt-4 mb-3">Go Premium. For less.</h1>
+              <p class="lead lh-180 text-white">Don't pay excessive monthly fees for Spotify's Premium and enjoy the
+                benefits of ad free music and downloadable content</p>
+              <div class="mt-6">
+                <a href="#info" class="btn btn-white btn-icon rounded-pill hover-translate-y-n3">
+                  <span class="btn-inner--icon"><i class="far fa-fire"></i></span>
+                  <span class="btn-inner--text">Let's get started</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="card bg-section-secondary mt-7 mb-0 py-5 px-4 shadow-lg perspective-right hover-scale-110">
+              <div class="card-body">
+                <h2 class="heading h2">
+                  <strong>Enjoy</strong> the benefits of premium
+                </h2>
+                <p class="lead lh-180 mt-4">With a simple one-time fee, you can enjoy a higher quality of music with
+                  nothing stopping you.</p>
+                <ul class="list-unstyled mt-4">
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <div class="icon icon-shape icon-primary icon-sm rounded-circle mr-3">
+                          <i class="far fa-ad"></i>
+                        </div>
+                      </div>
+                      <div>
+                        <span class="h6 mb-0">Ad-free music (no interruptions)</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <div class="icon icon-shape icon-warning icon-sm rounded-circle mr-3">
+                          <i class="far fa-infinity"></i>
+                        </div>
+                      </div>
+                      <div>
+                        <span class="h6 mb-0">Unlimited skips - no <i>shuffle-only</i> mode</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <div class="icon icon-shape icon-success icon-sm rounded-circle mr-3">
+                          <i class="far fa-wifi-slash"></i>
+                        </div>
+                      </div>
+                      <div>
+                        <span class="h6 mb-0">Listen offline</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SVG shape -->
+      <figure class="shape-container shape-position-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none"
+          x="0px" y="0px" viewBox="0 0 1000 300" style="enable-background:new 0 0 1000 300;" xml:space="preserve"
+          class="ie-shape-wave-1">
+          <path
+            d="M 0 246.131 C 0 246.131 31.631 250.035 47.487 249.429 C 65.149 248.755 82.784 245.945 99.944 241.732 C 184.214 221.045 222.601 171.885 309.221 166.413 C 369.892 162.581 514.918 201.709 573.164 201.709 C 714.375 201.709 772.023 48.574 910.547 21.276 C 939.811 15.509 1000 24.025 1000 24.025 L 1000 300.559 L -0.002 300.559 L 0 246.131 Z" />
+        </svg>
+      </figure>
+    </section>
+    <!-- Features (v20) -->
+    <section class="slice slice-lg" id="info">
+      <div class="container">
+        <div class="row row-grid">
+          <div class="col-lg-4">
+            <div class="text-center">
+              <div class="px-4 py-5">
+                <a href="pages/landing/index.html">
+                  <img alt="Image placeholder" src="/assets/img/svg/illustrations/in-sync.svg" class="img-fluid"
+                    style="height:190px;">
+                </a>
+              </div>
+              <div class="px-4 pb-4">
+                <h5>
+                  <a href="/upgrade">Updated API</a>
+                </h5>
+                <p class="text-muted">Our automated upgrader has been updated to work with Spotify's new API.</p>
+                <a href="/upgrade" class="btn btn-sm btn-dark btn-icon rounded-pill">
+                  <span class="btn-inner--text">Redeem your key</span>
+                  <span class="btn-inner--icon"><i class="far fa-angle-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="text-center">
+              <div class="px-4 py-5">
+                <a href="pages/landing/index.html">
+                  <img alt="Image placeholder" src="/assets/img/svg/illustrations/note-list.svg" class="img-fluid"
+                    style="height:190px;">
+                </a>
+              </div>
+              <div class="px-4 pb-4">
+                <h5>
+                  <a href="/buy">Top-tier support</a>
+                </h5>
+                <p class="text-muted">Our support remains unmatched so you can buy your key in peace.</p>
+                <a href="/buy" class="btn btn-sm btn-dark btn-icon rounded-pill">
+                  <span class="btn-inner--text">Buy a key</span>
+                  <span class="btn-inner--icon"><i class="far fa-angle-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="text-center">
+              <div class="px-4 py-5">
+                <a href="pages/landing/index.html">
+                  <img alt="Image placeholder" src="/assets/img/svg/illustrations/work-chat.svg" class="img-fluid"
+                    style="height:190px;">
+                </a>
+              </div>
+              <div class="px-4 pb-4">
+                <h5>
+                  <a href="/contact">Contact Us</a>
+                </h5>
+                <p class="text-muted">Need any more information? Contact us at any time, right here.</p>
+                <a href="/contact" class="btn btn-sm btn-dark btn-icon rounded-pill">
+                  <span class="btn-inner--text">Contact Us</span>
+                  <span class="btn-inner--icon"><i class="far fa-angle-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features (v10) -->
+    <section class="slice slice-lg">
+      <div class="container">
+        <div class="mb-5 text-center">
+          <h3 class=" mt-4">Why should I upgrade?</h3>
+          <div class="fluid-paragraph mt-3">
+            <p class="lead lh-180">Who doesn't want the benefits of Spotify's amazing premium service at lower prices?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card hover-shadow-lg hover-scale-110">
+              <div class="card-body py-4">
+                <div class="d-flex align-items-start">
+                  <div class="icon text-primary rounded-circle">
+                    <i class="far fa-money-bill-wave"></i>
+                  </div>
+                  <div class="icon-text pl-4">
+                    <h5 class="ma-0 ">Cheap one-time payment</h5>
+                    <p class="mb-0">You can enjoy everything that premium has to offer you,
+                      at this cheap one time cost. Pay once and never again.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card hover-shadow-lg hover-scale-110">
+              <div class="card-body py-4">
+                <div class="d-flex align-items-start">
+                  <div class="icon text-primary rounded-circle">
+                    <i class="far fa-ad"></i>
+                  </div>
+                  <div class="icon-text pl-4">
+                    <h5 class="ma-0 ">Ad-free streaming</h5>
+                    <p class="mb-0">No more annoying interruptions from the
+                      repetitive ads. Just sit back and enjoy your music.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card hover-shadow-lg hover-scale-110">
+              <div class="card-body py-4">
+                <div class="d-flex align-items-start">
+                  <div class="icon text-primary rounded-circle">
+                    <i class="far fa-wifi-slash"></i>
+                  </div>
+                  <div class="icon-text pl-4">
+                    <h5 class="ma-0 ">Offline streaming</h5>
+                    <p class="mb-0">Listen to your great selection of music
+                      on the go with the downloadable playlists.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card hover-shadow-lg hover-scale-110">
+              <div class="card-body py-4">
+                <div class="d-flex align-items-start">
+                  <div class="icon text-primary rounded-circle">
+                    <i class="far fa-medal"></i>
+                  </div>
+                  <div class="icon-text pl-4">
+                    <h5 class="ma-0 ">High Quality Streaming</h5>
+                    <p class="mb-0">Enjoy a higher bitrate of streaming
+                      on your loudspeakers without compromising data.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Upgrading -->
+    <section class="slice slice-lg bg-gradient-dark overflow-hidden">
+      <!-- SVG background -->
+      <div class="bg-absolute-cover bg-size--contain d-flex align-items-center">
+        <figure class="w-100">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 820" class="injected-svg svg-inject">
+            <path class="fill-cyan"
+              d="M 177.67 511.271 L 144.933 477.895 C 141.713 474.613 141.713 469.414 144.933 466.132 L 177.67 432.758 C 180.89 429.474 185.989 429.474 189.209 432.758 L 221.946 466.132 C 225.167 469.414 225.167 474.613 221.946 477.895 L 189.209 511.271 C 186.257 514.553 180.89 514.553 177.67 511.271 Z">
+            </path>
+            <circle class="fill-pink" cx="1209.162" cy="110.471" r="34.859"></circle>
+            <circle class="fill-yellow" stroke-width="3" stroke-miterlimit="10" cx="333.261" cy="222.266" r="25.344">
+            </circle>
+            <path class="fill-blue"
+              d="M 49.669 -9.998 C 51.03 -13.511 54.16 -16.03 57.882 -16.608 L 92.738 -22.023 C 96.459 -22.602 100.206 -21.149 102.568 -18.217 L 124.686 9.261 C 127.047 12.196 127.665 16.166 126.305 19.679 L 113.567 52.571 C 112.206 56.084 109.075 58.604 105.354 59.184 L 70.498 64.599 C 66.777 65.177 63.029 63.727 60.668 60.791 L 38.55 33.314 C 36.189 30.378 35.571 26.408 36.931 22.895 L 49.669 -9.998 Z">
+            </path>
+            <path class="fill-pink"
+              d="M 1032.318 376.476 C 1033.264 374.034 1035.44 372.282 1038.028 371.88 L 1062.261 368.116 C 1064.848 367.713 1067.453 368.723 1069.095 370.762 L 1084.472 389.865 C 1086.114 391.906 1086.544 394.666 1085.598 397.108 L 1076.742 419.976 C 1075.796 422.418 1073.619 424.17 1071.032 424.574 L 1046.799 428.338 C 1044.212 428.74 1041.606 427.732 1039.965 425.691 L 1024.588 406.588 C 1022.946 404.547 1022.517 401.787 1023.462 399.344 L 1032.318 376.476 Z">
+            </path>
+            <path class="fill-purple"
+              d="M 1396.93 665.688 C 1399.95 657.893 1406.894 652.305 1415.153 651.022 L 1492.489 639.008 C 1500.744 637.723 1509.057 640.947 1514.298 647.453 L 1563.372 708.418 C 1568.611 714.931 1569.981 723.739 1566.965 731.533 L 1538.703 804.512 C 1535.683 812.306 1528.736 817.897 1520.48 819.184 L 1443.144 831.199 C 1434.887 832.481 1426.573 829.264 1421.334 822.75 L 1372.26 761.786 C 1367.022 755.272 1365.65 746.463 1368.668 738.668 L 1396.93 665.688 Z">
+            </path>
+            <path class="fill-purple"
+              d="M 264.129 775.914 C 265.075 773.472 267.251 771.72 269.839 771.318 L 294.072 767.554 C 296.659 767.151 299.264 768.161 300.906 770.2 L 316.283 789.303 C 317.925 791.344 318.355 794.104 317.409 796.546 L 308.553 819.414 C 307.607 821.856 305.43 823.608 302.843 824.012 L 278.61 827.776 C 276.023 828.178 273.417 827.17 271.776 825.129 L 256.399 806.026 C 254.757 803.985 254.328 801.225 255.273 798.782 L 264.129 775.914 Z">
+            </path>
+            <circle class="fill-cyan" stroke-width="3" stroke-miterlimit="10" cx="745.931" cy="783.228" r="25.344">
+            </circle>
+            <path class="fill-purple"
+              d="M 929.895 57.225 C 930.389 55.951 931.524 55.036 932.875 54.826 L 945.523 52.862 C 946.873 52.652 948.232 53.179 949.089 54.243 L 957.115 64.213 C 957.972 65.278 958.196 66.719 957.702 67.993 L 953.08 79.928 C 952.587 81.203 951.45 82.117 950.1 82.328 L 937.453 84.293 C 936.103 84.502 934.742 83.976 933.886 82.911 L 925.86 72.941 C 925.004 71.876 924.78 70.435 925.273 69.16 L 929.895 57.225 Z">
+            </path>
+          </svg>
+        </figure>
+      </div>
+      <div class="container position-relative zindex-100">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6 col-md-8">
+            <h2 class="my-4">
+              <span class="display-4 text-white">Upgrade to Premium</span>
+            </h2>
+            <p>All you need to upgrade is a <a href="/buy">key</a> and your country. Sit back and enjoy the benefits of Spotify's premium. <a href="/contact">Need help</a>?</p>
+            <form class="mt-5">
+              <div class="form-group mb-0">
+                <div class="input-group input-group-merge rounded-pill bg-white">
+                  <select class="form-control form-control-flush" id="countryoptions"
+                    style=" border-top-right-radius: 50rem;border-bottom-right-radius: 50rem;"></select>
+                </div>
+              </div>
+              <br>
+              <div class="form-group mb-0">
+                <div class="input-group input-group-merge rounded-pill bg-white">
+                  <input type="password" class="form-control form-control-flush" name="upgradekey" id="upgradekey"
+                    placeholder="Upgrade key">
+                </div>
+              </div>
+              <div class="mt-4">
+                <a href="/buy">Buy a key</a>
+                <button style="margin-left: 10px;" type="button" id="submit" class="btn btn-sm btn-primary btn-icon rounded-pill">
+                  <span class="btn-inner--text">Upgrade</span>
+                  <span class="btn-inner--icon"><i class="far fa-long-arrow-alt-right"></i></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing (v1) -->
+    <section class="slice slice-lg" id="pricing">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="mb-5 text-center">
+              <h3 class=" mt-4">Pricing plans</h3>
+              <div class="fluid-paragraph mt-3">
+                <p class="lead lh-180">Buy an upgrade key to redeem here.</p>
+              </div>
+            </div>
+            <div class="pricing-container">
+              <div class="text-center mb-7">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="indiv" type="button" class="btn btn-secondary active" onclick="switcheroo(this)">Individual</button>
+                  <button type="button" class="btn btn-secondary" onclick="switcheroo(this)">Reseller</button>
+                </div>
+              </div>
+              <div class="pricing card-group flex-column flex-lg-row mb-3 shadow-none">
+                <div class="card card-pricing text-center border shadow-none hover-shadow">
+                  <div class="card-header py-5 border-0 delimiter-bottom">
+                    <span class="d-block h5 mb-4">Single</span>
+                    <div class="h1 text-primary text-center mb-0">$<span class="price" id="p1">...</span></div>
+                    <div class="h6 text-muted" id="u1">... User(s)</div>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled mb-4" id="l1">
+                      <li><span class="l1">...</span> premium upgrade</li>
+                      <li>Use for <span class="l1">...</span> user(s)</li>
+                      <li>Premium support</li>
+                    </ul>
+                    <a id="a1" href="/buy" class="btn btn-sm btn-neutral mb-3">Buy now</a>
+                  </div>
+                </div>
+                <div class="card card-pricing text-center popular scale-110">
+                  <div class="card-header py-5 border-0 delimiter-bottom">
+                    <span class="d-block h5 mb-4">Multiple</span>
+                    <div class="h1 text-primary text-center mb-0">$<span class="price" id="p2">...</span></div>
+                    <span class="h6 text-muted" id="u2">... Users</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled mb-4" id="l2">
+                      <li><span class="l2">...</span> premium upgrade</li>
+                      <li>Use for <span class="l2">...</span> users</li>
+                      <li>Premium support</li>
+                    </ul>
+                    <a id="a2" href="/buy" class="btn btn-sm btn-neutral mb-3">Buy now</a>
+                  </div>
+                </div>
+                <div class="card card-pricing text-center border shadow-none hover-shadow">
+                  <div class="card-header py-5 border-0 delimiter-bottom">
+                    <span class="d-block h5 mb-4">Extended</span>
+                    <div class="h1 text-primary text-center mb-0">$<span class="price" id="p3">...</span></div>
+                    <span class="h6 text-muted" id="u3">... Users</span>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled mb-4">
+                      <li><span class="l3">...</span> premium upgrade</li>
+                      <li>Use for <span class="l3">...</span> users</li>
+                      <li>Premium support</li>
+                    </ul>
+                    <a id="a3" href="/buy" class="btn btn-sm btn-neutral mb-3">Buy now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call to action (v7) -->
+    <section class="slice slice-lg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card bg-gradient-primary rounded shadow-lg border-0 text-center position-relative zindex-100">
+              <div class="card-body p-5">
+                <h3 class="text-white font-weight-400">What are you waiting for?</h3>
+                <p class="text-white">Buy your key now and enjoy the benefits of premium for a small price.</p>
+                <div class="mt-4">
+                  <a href="/buy"
+                    class="btn btn-white btn-icon rounded-pill px-4">
+                    <span class="btn-inner--icon"><i class="far fa-shopping-cart"></i></span>
+                    <span class="btn-inner--text">Purchase now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer id="footer-main">
+    <div class="footer footer-dark bg-section-dark">
+      <div class="container">
+        <div class="row pt-md">
+          <p>Made with ❤️ by Pringle</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal modal-success fade" id="stock_modal" tabindex="-1" role="dialog" aria-labelledby="modal_success"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h6" id="modal_title_6">Check our stock</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="py-3 text-center">
+            <i class="far fa-users fa-4x"></i>
+            <h5 class="heading h4 mt-4">Upgrade Stock</h5>
+            <p id="stock"></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm btn-white" data-dismiss="modal">OK, cool</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button style="display: none" id="response" data-toggle="modal" data-target="#modal-response"></button>
+  <div class="modal fade" id="modal-response" tabindex="-1" role="dialog" aria-labelledby="modal-change-username"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dark modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h6" id="modal_title_6">You've been upgraded!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="py-3 text-center">
+            <h5 class="font-weight-bold text-white">Address</h5>
+            <p class="mt-2 text-white mb-0" id="address">Loading...</p>
+            <hr class="divider divider-fade" />
+            <a href="#" id="inviteurl" target="_blank" class="btn btn-animated btn-success btn-animated-x">
+              <span class="btn-inner--visible">Upgrade</span>
+              <span class="btn-inner--hidden">
+                <i class="far fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="/assets/js/purpose.core.js"></script>
+  <script src="/assets/libs/typed.js/lib/typed.min.js"></script>
+  <script src="/assets/js/purpose.js"></script>
+  <script src="/assets/js/demo.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+  <script src="/assets/js/spotify.js"></script>
+</body>
+</html>
